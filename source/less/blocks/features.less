@@ -1,0 +1,90 @@
+@media (min-width: @desktop) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    min-height: 861px;
+    max-width: @desktop;
+    margin: 0 auto;
+  }
+
+  .features__heading {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+
+  .features__description {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 550px;
+    letter-spacing: 0.025em;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 1080px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .features__item {
+    width: 360px;
+    padding: 0 30px;
+    border: 1px solid red;
+  }
+
+  .features__video-container {
+    display: flex;
+    width: 273px;
+    height: 272px;
+    margin: auto;
+    border: 2px solid #e1e1e1;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .features__image {
+    width: 243px;
+    height: 243px;
+    border-radius: 50%;
+    margin: auto;
+
+    &--design {
+      background-image: url("../../img/video-design.jpg");
+    }
+
+    &--skills {
+      background-image: url("../../img/video-skills.jpg");
+    }
+
+    &--quality {
+      background-image: url("../../img/video-quality.jpg");
+    }
+  }
+
+  .features__play-btn {
+    display: block;
+    width: 68px;
+    height: 68px;
+    background-image: url("../../img/icon-play.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: @woody;
+    border-radius: 50%;
+    position: absolute;
+    top: 102.5px;
+    left: 102.5px;
+  }
+
+  .features__feature-desription {
+    font-family: @font-nova-r;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

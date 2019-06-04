@@ -1,0 +1,29 @@
+@media (min-width: 320px) {
+  .logo {
+    display: block;
+    width: 230px;
+    font-family: @font-nova-b;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: @black;
+    letter-spacing: 0.3em;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 64px;
+      height: 4px;
+      position: absolute;
+      background-color: @woody;
+      z-index: 5;
+      top: 19px;
+      left: 45px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    color: @white;
+  }
+}

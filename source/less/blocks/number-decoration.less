@@ -1,0 +1,22 @@
+@media (min-width: @desktop) {
+  .number-decoration {
+    display: block;
+    position: absolute;
+    font-family: @font-nova-b;
+    font-size: 36px;
+    letter-spacing: 0.075em;
+    color: @black;
+
+    &::after {
+      position: absolute;
+      right: -10px;
+      bottom: 10px;
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: @woody;
+    }
+  }
+}

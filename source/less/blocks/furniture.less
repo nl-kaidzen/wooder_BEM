@@ -1,0 +1,66 @@
+@media (min-width: @desktop) {
+  .furniture {
+    position: relative;
+    display: flex;
+    min-height: 593px;
+    max-width: @desktop;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 50px;
+      background-color: @woody;
+      position: absolute;
+      top: -25px;
+      right: 0;
+    }
+  }
+
+  .furniture__opacity-letter {
+    position: absolute;
+    top: -244px;
+    left: 34px;
+  }
+
+  .furniture__opacity-word {
+    position: absolute;
+    left: 866px;
+    top: 207px;
+  }
+
+  .furniture__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 604px;
+    margin-left: 20px;
+  }
+
+  .furniture__heading {
+    margin-top: 200px;
+    margin-left: 205px;
+  }
+
+  .furniture__description {
+    width: 345px;
+    padding: 0;
+    margin: 0;
+    margin-left: 205px;
+    margin-top: 10px;
+  }
+
+  .furniture__link {
+    margin-left: 205px;
+    margin-top: 15px;
+  }
+
+  .furniture__photo {
+    margin-top: 91px;
+  }
+
+  .furniture__number-decoration{
+    left: 48px;
+    bottom: 101px;
+  }
+}
