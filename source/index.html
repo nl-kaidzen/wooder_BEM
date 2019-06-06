@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>Wooder - test project after HTML&CSS Level 2</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <header class="page-header">
     <div class="header-wrapper">
@@ -36,7 +38,8 @@
       <span class="letter-big  furniture__opacity-letter">F</span>
       <div class="furniture__wrapper">
         <h2 class="heading furniture__heading">Furniture</h2>
-        <p class="description furniture__description">Wooder utilizes materials otherwise left behind, rendered useless in their original intent.
+        <p class="description furniture__description">Wooder utilizes materials otherwise left behind, rendered useless
+          in their original intent.
           By creating new pieces made of reclaimed barnwood</p>
         <a href="#" class="button-link  furniture__link">Learn more</a>
       </div>
@@ -57,16 +60,19 @@
       </picture>
       <div class="decor__wrapper">
         <h2 class="heading decor__heading">Decor</h2>
-        <p class="description decor__description">We make all types of wooden decor as per design given by Architect,Interior designer, contractor which is suitable
+        <p class="description decor__description">We make all types of wooden decor as per design given by
+          Architect,Interior designer, contractor which is suitable
           your premises.</p>
         <a href="#" class="button-link  decor__link">Learn more</a>
       </div>
       <span class="number-decoration  decor__number-decoration">02</span>
       <span class="word-decoration  decor__opacity-word">Decor</span>
     </section>
+
     <section class="features  main__features">
       <h2 class="heading features__heading">Wooder – is quality</h2>
-      <p class="description features__description">We create unique design objects made of rare wood, specially under the order. Look at the short video about our work.</p>
+      <p class="description features__description">We create unique design objects made of rare wood, specially under
+        the order. Look at the short video about our work.</p>
       <ul class="features__list">
         <li class="features__item">
           <div class="features__video-container">
@@ -94,16 +100,17 @@
     <section class="team-video  main__team">
       <div class="team-video__wrapper">
         <h2 class="heading  team-video__heading">We Do the design
-            of any complexity</h2>
+          of any complexity</h2>
         <p class="description  team-video__description">This is a team of professionals that make the furniture and
-            wood décor high standard. Creating modern designs.
-            Adhering to the global quality standards. And we are
-            doing work with love.</p>
-        <a href="#" class="button  team-video__button">Watch video</a>
+          wood décor high standard. Creating modern designs.
+          Adhering to the global quality standards. And we are
+          doing work with love.</p>
+        <a href="#" class="button  team-video__button  button--video">Watch video</a>
         <span class="team-video__play-bg"></span>
         <span class="letter-big  team-video__opacity-letter">V</span>
       </div>
     </section>
+
     <section class="about  main__about">
       <div class="about__wrapper">
         <span class="letter-big  about__opacity-letter">A</span>
@@ -114,20 +121,52 @@
         </picture>
         <div class="about__column-wrapper">
           <h2 class="heading about__heading">About us</h2>
-          <p class="description about__description">We are a team of professionals in the wood processing and the creation of wooden furniture
-              of the highest class</p>
+          <p class="description about__description">We are a team of professionals in the wood processing and the
+            creation of wooden furniture
+            of the highest class</p>
           <a href="#" class="button-link  about__link">Learn more</a>
         </div>
         <span class="word-decoration  about__opacity-word">About</span>
       </div>
-
     </section>
-    <section class="map  main__map">
 
+    <section class="map  main__map">
+      <picture>
+        <source media="(min-width: 1240px)" srcset="img/map-d.jpg">
+        <source media="(min-width: 768px)" srcset="img/map-t.jpg">
+        <img src="img/map-m.jpg" alt="Карта с местоположением студии Wooder" class="map__map-img" width="320"
+          height="451">
+      </picture>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4572.273240973274!2d82.96611495602752!3d55.04082204916227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5f463cf9467%3A0x8d72519184b1dc28!2z0YPQuy4g0JrQvtGI0YPRgNC90LjQutC-0LLQsCwgMjIvNiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMTEy!5e0!3m2!1sru!2sru!4v1559795144778!5m2!1sru!2sru"
+        width="320" height="451" frameborder="0" style="border:0" allowfullscreen
+        class="map__google-map  map__no-js"></iframe>
     </section>
   </main>
-  <footer>
-
+  <footer class="footer">
+    <ul class="footer__link-list">
+      <li class="footer__items">
+        <p class="footer__copyright">&#169; 2019 WOODER</p>
+      </li>
+      <li class="footer__items">
+        <a href="index.html" class="footer__logo">
+          <span class="logo">Wooder</span>
+        </a>
+      </li>
+      <li class="footer__items">
+        <a href="https://vk.com/nl_kaidzen" class="footer__copyright-link">Created By <span
+            class="footer__creator">AndreyHabarov</span></a>
+      </li>
+    </ul>
   </footer>
+  <script>
+    var googleMap = document.querySelector('.map__google-map');
+    var imageMap = document.querySelector('.map__map-img');
+    console.log(googleMap);
+    console.log(imageMap);
+    googleMap.classList.remove('map__no-js');
+    imageMap.classList.add('map__no-js');
+  </script>
 </body>
+
 </html>

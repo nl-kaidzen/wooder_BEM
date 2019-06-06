@@ -1,7 +1,84 @@
-@media (min-width: @desktop) {
+@media (min-width: @mobile) {
   .furniture {
     position: relative;
     display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 50px;
+      background-color: @woody;
+      position: absolute;
+      top: -25px;
+      right: 0;
+    }
+  }
+
+  .furniture__opacity-letter {
+    position: absolute;
+    top: -125px;
+    left: 0;
+  }
+
+  .furniture__opacity-word {
+    display: none;
+    position: absolute;
+    left: 866px;
+    top: 207px;
+  }
+
+  .furniture__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .furniture__heading {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+
+  .furniture__description {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .furniture__link {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+
+  .furniture__photo {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .furniture__number-decoration {
+    display: none;
+    left: 48px;
+    bottom: 101px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .furniture {
+    flex-direction: row;
     min-height: 593px;
     max-width: @desktop;
     margin: 0 auto;
@@ -31,7 +108,6 @@
   }
 
   .furniture__wrapper {
-    display: flex;
     flex-direction: column;
     width: 604px;
     margin-left: 20px;
