@@ -1,7 +1,90 @@
+@media (min-width: @mobile) {
+  .decor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 50px;
+      background-color: @woody;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .decor__opacity-letter {
+    position: absolute;
+    top: -125px;
+    right: 0;
+  }
+
+  .decor__opacity-word {
+    display: none;
+    position: absolute;
+    left: -340px;
+    top: 300px;
+  }
+
+  .decor__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .decor__heading {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
+  .decor__description {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .decor__link {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+
+  .decor__picture {
+    order: 1;
+  }
+
+  .decor__photo {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .decor__number-decoration {
+    display: none;
+    right: 48px;
+    bottom: -10px;
+  }
+}
+
 @media (min-width: @desktop) {
   .decor {
     position: relative;
     display: flex;
+    flex-direction: row;
     min-height: 636px;
     max-width: @desktop;
     margin: 0 auto;
@@ -26,6 +109,7 @@
   }
 
   .decor__opacity-word {
+    display: block;
     position: absolute;
     left: -340px;
     top: 300px;
@@ -61,7 +145,8 @@
     margin-left: 20px;
   }
 
-  .decor__number-decoration{
+  .decor__number-decoration {
+    display: block;
     right: 48px;
     bottom: -10px;
   }
